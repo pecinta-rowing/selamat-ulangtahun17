@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎂 Selamat Ulang Tahun | Tech Edition</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Matrix Rain Background -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- Floating Orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ========== SECTION 1: HERO ========== -->
+  <section class="section hero-section">
+    <div class="container">
+      <div class="holo-card">
+
+        <div class="glitch-wrapper">
+          <h1 class="glitch" data-text="HAPPY BIRTHDAY">HAPPY BIRTHDAY</h1>
+        </div>
+
+        <div class="cake-container">
+          <span class="candle-flame">🔥</span>
+          🎂
+        </div>
+
+        <p class="subtitle">// SYSTEM CELEBRATION v2.0 //</p>
+
+        <h2 class="name">Untuk Kamu Yang Spesial</h2>
+
+        <p class="message">
+          Selamat ulang tahun! 🎉 Semoga tahun ini penuh dengan kode yang bersih, 
+          bug yang sedikit, dan kebahagiaan yang tak terbatas.
+        </p>
+
+        <div class="terminal">
+          <div><span class="prompt">user@birthday:~$</span> ./celebrate --name="Kamu" --age="+1"</div>
+          <div><span class="prompt">></span> Loading happiness... [██████████] 100%</div>
+          <div><span class="prompt">></span> Status: <span style="color:#00ff88;">SUCCESS ✅</span></div>
+          <div><span class="prompt">></span> Wish sent! <span class="cursor"></span></div>
+        </div>
+
+        <button class="btn-tech" id="celebrateBtn">🚀 Luncurkan Perayaan</button>
+
+        <svg class="heartbeat" viewBox="0 0 600 40" preserveAspectRatio="none">
+          <polyline points="0,20 60,20 80,20 90,5 100,35 110,20 200,20 220,20 230,5 240,35 250,20 400,20 420,20 430,5 440,35 450,20 600,20" />
+        </svg>
+
+        <div class="scroll-hint">
+          <span>⬇ Scroll ke bawah ⬇</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 2: WISHES ========== -->
+  <section class="section wishes-section">
+    <div class="container">
+      <h2 class="section-title" data-text="// HARAPAN & DOA //">// HARAPAN &amp; DOA //</h2>
+
+      <div class="cards-grid">
+
+        <div class="tech-card">
+          <div class="card-icon">💻</div>
+          <h3>Karier & Kode</h3>
+          <p>Semoga setiap baris kode yang kamu tulis menjadi berkah, dan setiap project yang kamu kerjakan sukses tanpa error.</p>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="tech-card">
+          <div class="card-icon">❤️</div>
+          <h3>Kesehatan</h3>
+          <p>Semoga kamu selalu sehat, kuat, dan bahagia. Jaga kesehatan seperti kamu menjaga uptime server.</p>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="tech-card">
+          <div class="card-icon">🚀</div>
+          <h3>Masa Depan</h3>
+          <p>Semoga tahun ini menjadi tahun pertumbuhan, upgrade skill, dan pencapaian baru yang membanggakan.</p>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="tech-card">
+          <div class="card-icon">🌟</div>
+          <h3>Kebahagiaan</h3>
+          <p>Semoga setiap harimu penuh tawa, cinta, dan momen indah yang tidak akan pernah kamu lupakan.</p>
+          <div class="card-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 3: TIMELINE ========== -->
+  <section class="section timeline-section">
+    <div class="container">
+      <h2 class="section-title" data-text="// TIMELINE KEHIDUPAN //">// TIMELINE KEHIDUPAN //</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">PAST</span>
+            <h3>Yang Sudah Dilalui</h3>
+            <p>Semua pengalaman, suka dan duka, telah membentukmu menjadi pribadi yang kuat dan luar biasa.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">PRESENT</span>
+            <h3>Yang Sedang Dijalani</h3>
+            <p>Nikmati setiap momen hari ini. Kamu sedang berada di titik terbaik dalam hidupmu.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">FUTURE</span>
+            <h3>Yang Akan Datang</h3>
+            <p>Masa depan penuh peluang. Teruslah bermimpi besar dan wujudkan satu per satu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 4: FOOTER ========== -->
+  <section class="section footer-section">
+    <div class="container">
+      <div class="footer-card">
+        <div class="footer-icon">🎉</div>
+        <h2 class="footer-title">Selamat Ulang Tahun!</h2>
+        <p class="footer-message">
+          Terima kasih sudah menjadi bagian dari hidup ini. Semoga tahun ini menjadi tahun terbaikmu!
+        </p>
+        <button class="btn-tech" id="celebrateBtn2">🎊 Rayakan Lagi!</button>
+        <p class="footer-copy">Made with ❤️ & ☕</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
